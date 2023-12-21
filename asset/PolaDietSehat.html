@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url(gambar/desktop-wallpaper-black-and-white-leaf-dark-leaf.jpg);
+      background-position: center center;
+      background-size: cover;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 50px;
+      color: white;
+      margin-bottom: 50px;
+    }
+    h3{
+        padding-top: 10px;
+    }
+    .owl-carousel {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .owl-carousel .item {
+      margin: 10px;
+      /* border: 1px solid #fbff2a; warna border */
+      border-radius: 20px; /* border-radius untuk membuat sudut elemen melengkung */
+      overflow: hidden; /* mengatasi sudut melengkung */
+      background: rgb(255,17,62);
+      background: linear-gradient(347deg, rgba(255,17,62,1) 0%, rgba(81,0,255,1) 0%, rgba(207,0,70,1) 100%);
+      padding: 10px 20px 0px 20px;
+      box-shadow: 3px 3px 7px rgb(44, 93, 255);
+    }
+
+    .owl-carousel img {
+        max-width: 90%;
+        height: auto;
+        margin: auto;
+    }
+    .item{
+      color: rgb(184, 184, 184);
+    }
+    .item-content {
+      text-align: justify; /* men
+      padding: 15px; /* menambahkan padding pada elemen content */
+    }
+
+    .item-content h3 {
+      margin: 0;
+    }
+    button {
+      margin-bottom: 15px;
+      background-color: aqua;
+      border-radius: 5px;
+      border: none !important;
+      box-shadow: 3px 3px 7px rgba(255, 181, 181, 0.5), -3px -3px 7px rgba(255, 152, 152, 0.5);
+    }
+    button:hover {
+      background-color: rgb(255, 241, 50);
+      color: rgb(0, 0, 0) !important;
+      font-weight: bold !important;
+    }
+    .item:nth-child(1) { background-color: #ff3835; } /* warna peach */
+    .item:nth-child(2) { background-color: #a7ff4f; } /* warna light green */
+    .item:nth-child(3) { background-color: #49ceff; } /* warna light blue */
+    .item:nth-child(4) { background-color: #ffa12e; } /* warna light orange */
+    .additional-text{
+      display: none;
+    }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+
+<h2>POLA DIET SEHAT</h2>
+
+<div class="owl-carousel">
+  <div class="item">
+    <img src="gambar/ilustrasi-diet-ampuh_20161018_091404-removebg-preview.png" alt="Image 1">
+    <div class="item-content">
+      <h3>Menu Makanan Rendah Kalori Tinggi Gizi</h3>
+      <p class="initial-text">Jenis makanan yang bisa mendukung diet sehat di antaranya yaitu sayur-mayur, buah-buahan, daging tanpa lemak, ikan, kacang-kacangan, biji-bijian, susu rendah lemak, yogurt tawar (plain yoghurt), dan pati. Seperti:
+        Produk berbahan 
+        </p>
+      <p class="additional-text">dasar gula seperti makanan tinggi gula serta minuman manis.
+        Sumber lemak trans seperti daging berlemak, susu full cream, gorengan, fast food, margarin.
+        Lemak jenuh seperti keju, es krim, santan, mentega, margarin.</p>
+      <button onclick="toggleReadMore(this)">Read More</button>
+    </div>
+  </div>
+  <div class="item">
+    <img src="gambar/Tips-Mengisi-Piring-dengan-4-Sehat-5-Sempurna-untuk-Penuhi-Kebutuhan-Gizi-min-removebg-preview.png" alt="Image 2">
+    <div class="item-content">
+      <h3>Asupan Gizi Tetap Lengkap dan Seimbang</h3>
+      <p class="initial-text">Untuk memastikan kecukupan gizi saat diet, Anda perlu mengonsumsi beragam jenis makan dalam jumlah yang seimbang. Anda bisa mencoba membagi porsi dari masing-masing jenis makanan tersebut pada satu piring makan sehat</p>
+      <p class="additional-text">agar lebih mudah.Asupan sayur-mayur dan buah-buahan biasanya menjadi yang paling maksimal, sehingga Anda perlu memenuhi setengah piring Anda dengan jenis makanan ini. Pilihlah sayur dan buah dengan jenis dan warna yang bervariasi.</p>
+        <button onclick="toggleReadMore(this)">Read More</button>
+    </div>
+  </div>
+  <div class="item">
+    <img src="gambar/porsi-makan-yang-cukup-removebg-preview.png" alt="Image 3">
+    <div class="item-content">
+      <h3>Atur Porsi Makanan Dengan Tepat</h3>
+      <p class="initial-text">Selanjutnya, penuhi seperempat piring Anda dengan sumber karbohidrat seperti nasi, roti, atau pasta. Agar lebih menyehatkan, pilihlah biji-bijian lain seperti beras merah atau oat mengingat makanan</p>
+        <p class="additional-text">tersebut memiliki efek lebih ringan untuk gula darah.
+            Seperempat sisanya bisa Anda penuhi dengan sumber protein yang sehat seperti ikan dan daging tanpa lemak. Anda boleh mengonsumsi daging merah atau daging olahan seperti sosis, tapi sebaiknya tidak terlalu sering.
+            Anda dapat memasak makanan dengan cara sehat yakni dipanggang, dikukus, atau direbus. Bila Anda ingin menggorengnya, gunakan minyak nabati seperti minyak zaitun, kanola, atau jagung untuk alternatif yang lebih sehat.
+            Selain itu, sesuaikan porsi makan dengan kebutuhan kalori sehari-hari. Pada intinya, kunci utama dalam melakukan diet yang sehat adalah makan secukupnya dengan gizi yang seimbang.</p>
+        </p>
+        <button onclick="toggleReadMore(this)">Read More</button>
+    </div>
+  </div>
+  <!-- Add more items as needed -->
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+          nav: true
+        },
+        600: {
+          items: 2,
+          nav: false
+        },
+        1000: {
+          items: 4,
+          nav: true,
+          loop: false
+        }
+      }
+    });
+  });
+
+  function toggleReadMore(button) {
+  var section = button.closest('.item');
+  var additionalText = section.querySelector('.additional-text');
+  var buttonText = button;
+
+  if (additionalText.style.display === 'none' || additionalText.style.display === '') {
+    additionalText.style.display = 'block';
+    buttonText.textContent = 'Read Less';
+  } else {
+    additionalText.style.display = 'none';
+    buttonText.textContent = 'Read More';
+  }
+}
+</script>
+
+  
+
+
+</body>
+</html>

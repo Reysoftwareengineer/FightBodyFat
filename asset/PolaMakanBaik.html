@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url(gambar/desktop-wallpaper-black-and-white-leaf-dark-leaf.jpg);
+      background-position: center center;
+      background-size: cover;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 50px;
+      color: white;
+      margin-bottom: 50px;
+    }
+
+    .owl-carousel {
+      display: flex;
+      align-items: center;
+    }
+    .item:nth-child(1) { background-color: #ff3835; } /* warna peach */
+    .item:nth-child(2) { background-color: #a7ff4f; } /* warna light green */
+    .item:nth-child(3) { background-color: #49ceff; } /* warna light blue */
+    .item:nth-child(4) { background-color: #ffa12e; } /* warna light orange */
+
+    .owl-carousel .item {
+      margin: 10px;
+      /* border: 1px solid #fbff2a; warna border */
+      border-radius: 20px; /* border-radius untuk membuat sudut elemen melengkung */
+      overflow: hidden; /* mengatasi sudut melengkung */
+      opacity: 100%;
+      background: rgb(255,17,62);
+      background: linear-gradient(347deg, rgba(255,17,62,1) 0%, rgba(81,0,255,1) 0%, rgba(207,0,70,1) 100%);
+      padding: 10px 20px 0px 20px;
+      box-shadow: 3px 3px 7px rgb(44, 93, 255);
+    }
+
+    .owl-carousel img {
+        max-width: 90%;
+        height: auto;
+        margin: auto;
+    }
+    
+    .item{
+      color: rgb(184, 184, 184);
+    }
+    .item-content {
+      text-align: justify; /* men
+      padding: 15px; /* menambahkan padding pada elemen content */
+    }
+
+    .item-content h3 {
+      margin: 0;
+    }
+    button {
+      margin-bottom: 15px;
+      background-color: aqua;
+      border-radius: 5px;
+      border: none !important;
+      box-shadow: 3px 3px 7px rgba(255, 181, 181, 0.5), -3px -3px 7px rgba(255, 152, 152, 0.5);
+    }
+    button:hover {
+      background-color: rgb(255, 241, 50);
+      color: rgb(0, 0, 0) !important;
+      font-weight: bold !important;
+    }
+    
+    .additional-text{
+      display: none;
+    }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+
+<h2>POLA MAKAN SEHAT</h2>
+
+<div class="owl-carousel">
+  <div class="item">
+    <img src="gambar/pngtree-nutritious-meals-png-image_5619541-removebg-preview.png" alt="Image 1">
+    <div class="item-content">
+      <h3>Mengonsumsi Makanan Bergizi</h3>
+      <p class="initial-text">Kunci utama dari pola makan sehat, yakni mengonsumsi makanan yang mengandung nutrisi yang baik bagi tubuh. Cara pengolahan makanan juga perlu diperhatikan, apakah cara yang digunakan menghilangkan nutrisi yang dikandung oleh suatu pangan.</p>
+      <p class="additional-text">Cara menerapkannya adalah dengan mengonsumsi lima kelompok pangan setiap hari atau setiap kali makan. Kelima kelompok pangan tersebut adalah makanan pokok, lauk-pauk, sayuran, buah-buahan dan minuman.</p>
+      <button onclick="toggleReadMore(this)">Read More</button>
+    </div>
+  </div>
+  <div class="item">
+    <img src="gambar/077f97f28737a92fcedcc5c548921e7e-removebg-preview.png" alt="Image 2">
+    <div class="item-content">
+      <h3>Mengurangi Konsumsi Garam, Gula, dan Minyak</h3>
+      <p class="initial-text">Tips kedua untuk menerapkan pola makan sehat ialah dengan membatasi jumlah asupan gula, minyak, dan garam tiap harinya. Konsumsi minyak yang berlebihan dapat</p>
+      <p class="additional-text">menyebabkan dapat meningkatkan risiko kanker.
+        Konsumsi gula berlebih meningkatkan risiko obesitas, kanker, diabetes tipe II, penyakit kardiovaskular, dll, sedangkan garam berlebih bisa menyebabkan tekanan darah tinggi dan stroke.
+        Berikut anjuran konsumsi garam, gula, dan minyak per hari:
+        Gula: 4 sendok makan per orang per hari atau setara dengan 50 gram.
+        Garam: 1 sendok teh per orang per hari atau setara dengan 5 gram.
+        Minyak: 5 sendok makan per orang per hari atau setara dengan 67 gram.</p>
+        <button onclick="toggleReadMore(this)">Read More</button>
+    </div>
+  </div>
+  <div class="item">
+    <img src="gambar/476-4768338_basic-breakfast6-sarapan-pagi-tinggi-protein-hd-png-removebg-preview.png" alt="Image 3">
+    <div class="item-content">
+      <h3>Membiasakan Sarapan Pagi</h3>
+      <p class="initial-text">Sarapan pagi dapat membantu seseorang agar fit ketika melaksanakan sejumlah aktivitas sehari-hari. Sayangnya, orang-orang masih belum membiasakan sarapan setiap pagi.
+        Sarapan adalah kegiatan makan dan minum yang dilakukan antara bangun pagi sampai jam 9 <div class="additional-text">untuk memenuhi sebagian kebutuhan gizi harian (15-30% kebutuhan gizi) dalam rangka mewujudkan hidup sehat, aktif, dan produktif.</div>
+        </p>
+        <button onclick="toggleReadMore(this)">Read More</button>
+    </div>
+  </div>
+  <div class="item">
+    <img src="gambar/662609812-removebg-preview (1).png" alt="Image 4">
+    <div class="item-content">
+      <h3>Penuhi Kebutuhan Cairan Tubuh</h3>
+      <p>Selain makanan yang bergizi, manusia juga memerlukan sejumlah cairan agar tetap terhidrasi dengan baik. Cara memenuhi kebutuhan cairan tubuh ialah dengan meminum air putih minimal 8 gelas per hari guna tetap menjaga kondisi tubuh agar tetap sehat.</p>
+    </div>
+  </div>
+  <!-- Add more items as needed -->
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+          nav: true
+        },
+        600: {
+          items: 2,
+          nav: false
+        },
+        1000: {
+          items: 4,
+          nav: true,
+          loop: false
+        }
+      }
+    });
+  });
+
+  function toggleReadMore(button) {
+  var section = button.closest('.item');
+  var additionalText = section.querySelector('.additional-text');
+  var buttonText = button;
+
+  if (additionalText.style.display === 'none' || additionalText.style.display === '') {
+    additionalText.style.display = 'block';
+    buttonText.textContent = 'Read Less';
+  } else {
+    additionalText.style.display = 'none';
+    buttonText.textContent = 'Read More';
+  }
+}
+
+</script>
+
+  
+
+
+</body>
+</html>

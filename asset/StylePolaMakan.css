@@ -1,0 +1,35 @@
+body {
+font-family: Arial, sans-serif;
+}
+
+h2 {
+text-align: center;
+margin-top: 20px;
+}
+
+.owl-carousel {
+display: flex;
+align-items: center;
+flex-direction: row;
+}
+
+.owl-carousel .item {
+margin: 10px;
+border: 1px solid #ddd; /* warna border */
+border-radius: 8px; /* border-radius untuk membuat sudut elemen melengkung */
+overflow: hidden; /* mengatasi sudut melengkung */
+}
+
+.owl-carousel img {
+width: 100%;
+height: auto;
+}
+
+.item-content {
+text-align: center;
+padding: 15px; /* menambahkan padding pada elemen content */
+}
+
+.item-content h3 {
+margin: 0;
+}

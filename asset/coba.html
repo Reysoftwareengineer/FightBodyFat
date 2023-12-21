@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Read More Example</title>
+</head>
+<body>
+
+  <div class="content">
+    <div class="section">
+      <p class="initial-text">Bagian 1: Ini adalah teks awal yang ditampilkan. </p>
+      <p class="additional-text">Ini adalah teks tambahan untuk Bagian 1 yang disembunyikan. </p>
+      <button onclick="toggleReadMore(1)">Read More</button>
+    </div>
+
+    <div class="section">
+      <p class="initial-text">Bagian 2: Ini adalah teks awal yang ditampilkan. </p>
+      <p class="additional-text">Ini adalah teks tambahan untuk Bagian 2 yang disembunyikan. </p>
+      <button onclick="toggleReadMore(2)">Read More</button>
+    </div>
+
+    <div class="section">
+      <p class="initial-text">Bagian 3: Ini adalah teks awal yang ditampilkan. </p>
+      <p class="additional-text">Ini adalah teks tambahan untuk Bagian 3 yang disembunyikan. </p>
+      <button onclick="toggleReadMore(3)">Read More</button>
+    </div>
+  </div>
+
+  <script>
+    function toggleReadMore(sectionNumber) {
+  var additionalText = document.querySelector('.content .section:nth-child(' + sectionNumber + ') .additional-text');
+  var buttonText = document.querySelector('.content .section:nth-child(' + sectionNumber + ') button');
+
+  if (additionalText.style.display === 'none' || additionalText.style.display === '') {
+    additionalText.style.display = 'block';
+    buttonText.textContent = 'Read Less';
+  } else {
+    additionalText.style.display = 'none';
+    buttonText.textContent = 'Read More';
+  }
+}
+
+  </script>
+</body>
+</html>

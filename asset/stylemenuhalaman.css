@@ -1,0 +1,295 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+.container{
+    width: 80%;
+    height: 700px;
+    margin: auto;
+    /* background-color: blue; */
+    padding-top: 50px;
+    background-image: url(gambar/desktop-wallpaper-black-and-white-leaf-dark-leaf.jpg);
+    background-position:center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.menu{
+    width: 97%;
+    height: 620px;
+    /* background-color: aqua; */
+    background-image: radial-gradient(circle at 22.52% 26.94%, #333f42 0, #2e3637 16.67%, #282a2a 33.33%, #201c1c 50%, #190d0d 66.67%, #120000 83.33%, #0a0000 100%);
+    border-radius: 30px 30px 0 0;
+    padding: 20px 10px 10px 10px;
+    margin: auto;
+    border-top: 2px solid rgb(255, 144, 144);
+    background-image: url(gambar/desktop-wallpaper-black-and-white-leaf-dark-leaf.jpg);
+}
+.menu .logo-atas{
+    width: 96%;
+    height: 200px;
+    padding: 12px;
+    /* background-color: brown; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.menu .logo-atas .kemenkes{
+    width: 400px;
+    height: 200px;
+    /* background-color: cornflowerblue; */
+    background-image: url(gambar/kemenkes\ edit\ merah.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 350px;
+}
+/* .menu .logo-atas .univ{
+    width: 200px;
+    height: 200px;
+    margin-left: 50px;
+    background-color: cornflowerblue;
+} */
+.menu .judul{
+    width: 96%;
+    height: 50px;
+    padding: 12px;
+    /* background-color: darkmagenta; */
+    font-weight: bold;
+    margin: auto;
+    color: rgb(170, 170, 170);
+    font-size: 25px;
+}
+.menu .deskripsi{
+    width: 96%;
+    height: 50px;
+    padding: 12px;
+    /* background-color: rgb(0, 139, 81); */
+    margin: auto;
+    color: rgb(170, 170, 170);
+}
+.menu .fitur{
+    width: 93%;
+    height: 255px;
+    padding: 12px;
+    margin: auto;
+    /* background-color: rgb(180, 78, 45); */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 3px 3px 7px rgba(255, 181, 181, 0.5), -3px -3px 7px rgba(255, 152, 152, 0.5);
+    /* border: 2px solid red; */
+    backdrop-filter: blur(10px);
+}
+.menu .fitur .pola-diet{
+    width: 97%;
+    height: 40px;
+    /* padding: 12px; */
+    /* background-color: darkseagreen; */
+    display: flex;
+    border-bottom: 2px solid rgb(255, 127, 127) !important;
+    padding-bottom: 5px;
+}
+.menu .fitur .pola-diet .logo{
+    width: 40px;
+    height: 40px;
+    /* background-color: crimson; */
+    display: flex;
+    background-image: url(gambar/dumbbell.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.menu .fitur .pola-diet .ket{
+    width: 550px;
+    height: 40px;
+    /* background-color: rgb(30, 145, 116); */
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+.menu .fitur .pola-diet .ket a{
+    text-decoration: none;
+    color: rgb(170, 170, 170);
+}
+.menu .fitur .pola-makan{
+    width: 97%;
+    height: 40px;
+    /* padding: 12px; */
+    /* background-color: darkseagreen; */
+    display: flex;
+    border-bottom: 2px solid rgb(255, 127, 127) !important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.menu .fitur .pola-makan .logo{
+    width: 40px;
+    height: 40px;
+    /* background-color: crimson; */
+    display: flex;
+    background-image: url(gambar/salad.png);
+    background-size: cover;
+    background-position: center center;
+}
+.menu .fitur .pola-makan .ket{
+    width: 550px;
+    height: 40px;
+    /* background-color: rgb(30, 145, 116); */
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+.menu .fitur .pola-makan .ket a{
+    text-decoration: none;
+    color: rgb(170, 170, 170);
+    font-weight: bold !important;
+}
+.menu .fitur .pola-perhitungan-bb{
+    width: 97%;
+    height: 40px;
+    /* padding: 12px; */
+    /* background-color: darkseagreen; */
+    display: flex;
+    border-bottom: 2px solid rgb(255, 127, 127) !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px;
+}
+.menu .fitur .pola-perhitungan-bb .logo{
+    width: 40px;
+    height: 40px;
+    /* background-color: crimson; */
+    display: flex;
+    background-image: url(gambar/mental-health.png);
+    background-position: center center;
+    background-size: cover;
+}
+.menu .fitur .pola-perhitungan-bb .ket{
+    width: 550px;
+    height: 40px;
+    /* background-color: rgb(30, 145, 116); */
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+.menu .fitur .pola-perhitungan-bb .ket a{
+    text-decoration: none;
+    color: rgb(170, 170, 170);
+    font-weight: bold;
+}
+.menu .fitur .kalori{
+    width: 97%;
+    height: 40px;
+    /* padding: 12px; */
+    /* background-color: darkseagreen; */
+    display: flex;
+    border-bottom: 2px solid rgb(255, 127, 127) !important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.menu .fitur .kalori .logo{
+    width: 40px;
+    height: 40px;
+    /* background-color: crimson; */
+    display: flex;
+    background-image: url(gambar/monitor.png);
+    background-size: cover;
+    background-position: center center;
+}
+.menu .fitur .kalori .ket{
+    width: 550px;
+    height: 40px;
+    /* background-color: rgb(30, 145, 116); */
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+.menu .fitur .kalori .ket a{
+    text-decoration: none;
+    color: rgb(170, 170, 170);
+    font-weight: bold !important;
+}
+.menu .fitur .perhitungan-kalori{
+    width: 97%;
+    height: 40px;
+    /* padding: 12px; */
+    /* background-color: darkseagreen; */
+    display: flex;
+    /* border-bottom: 2px solid rgb(255, 127, 127) !important; */
+    padding-top: 5px;
+    padding-bottom: 5px !important;
+}
+.menu .fitur .perhitungan-kalori .logo{
+    width: 40px;
+    height: 40px;
+    /* background-color: crimson; */
+    display: flex;
+    background-image: url(gambar/medical-history.png);
+    background-size: cover;
+    background-position: center center;
+}
+.menu .fitur .perhitungan-kalori .ket{
+    width: 550px;
+    height: 40px;
+    /* background-color: rgb(30, 145, 116); */
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+.menu .fitur .perhitungan-kalori .ket a{
+    text-decoration: none;
+    color: rgb(170, 170, 170);
+    font-weight: bold;
+}
+@media only screen and (max-width:600px){
+    .container{
+        width: 100%;
+    }
+    .menu .logo-atas{
+        width: 92%;
+        margin: auto;
+        margin-left: 0;
+    }
+    .menu .logo-atas .kemenkes{
+        background-size: 250px;
+    }
+    .menu .judul{
+        width: 92%;
+        margin: auto;
+        margin-left: 0;
+        font-size: 18px;
+    }
+    .menu .deskripsi{
+        width: 92%;
+        margin: auto;
+        margin-left: 0;
+        font-size: 12px;
+    }
+    .menu .fitur{
+        width: 92%;
+        margin: auto;
+        margin-left: 0;
+    }
+    .menu .fitur .pola-diet .logo{
+        width: 80px;
+        height: 40px;
+    }
+    .menu .fitur .pola-makan .logo{
+        width: 80px;
+        height: 40px;
+    }
+    .menu .fitur .pola-perhitungan-bb .logo{
+        width: 80px;
+        height: 40px;
+    }
+    .menu .fitur .kalori .logo{
+        width: 80px;
+        height: 40px;
+    }
+    .menu .fitur .perhitungan-kalori .logo{
+        width: 80px;
+        height: 40px;
+    }
+}
