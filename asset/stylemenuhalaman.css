@@ -6,7 +6,7 @@ body{
 }
 .container{
     width: 80%;
-    height: 700px;
+    height: 620px;
     margin: auto;
     /* background-color: blue; */
     padding-top: 50px;
@@ -14,6 +14,28 @@ body{
     background-position:center center;
     background-size: cover;
     background-repeat: no-repeat;
+    overflow: hidden;
+}
+.judul {
+    text-align: center;
+    animation: colorAnimation 5s linear infinite alternate;
+}
+@keyframes colorAnimation {
+    0% {
+        color: #3498db; /* Warna awal */
+    }
+    25% {
+        color: #e74c3c;
+    }
+    50% {
+        color: #2ecc71;
+    }
+    75% {
+        color: #f39c12;
+    }
+    100% {
+        color: #3498db; /* Kembali ke warna awal */
+    }
 }
 .menu{
     width: 97%;
@@ -101,6 +123,7 @@ body{
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    animation: zoomAnimation 2s linear infinite alternate;
 }
 .menu .fitur .pola-diet .ket{
     width: 550px;
@@ -133,6 +156,7 @@ body{
     background-image: url(gambar/salad.png);
     background-size: cover;
     background-position: center center;
+    animation: zoomAnimation 2s linear infinite alternate;
 }
 .menu .fitur .pola-makan .ket{
     width: 550px;
@@ -165,6 +189,7 @@ body{
     background-image: url(gambar/mental-health.png);
     background-position: center center;
     background-size: cover;
+    animation: zoomAnimation 2s linear infinite alternate;
 }
 .menu .fitur .pola-perhitungan-bb .ket{
     width: 550px;
@@ -197,6 +222,7 @@ body{
     background-image: url(gambar/monitor.png);
     background-size: cover;
     background-position: center center;
+    animation: zoomAnimation 2s linear infinite alternate;
 }
 .menu .fitur .kalori .ket{
     width: 550px;
@@ -242,6 +268,14 @@ body{
     text-decoration: none;
     color: rgb(170, 170, 170);
     font-weight: bold;
+}
+@keyframes zoomAnimation {
+    0% {
+        transform: scale(1); /* Tidak ada zoom (ukuran normal) */
+    }
+    100% {
+        transform: scale(1.2); /* Zoom in (1.2 kali ukuran normal) */
+    }
 }
 @media only screen and (max-width:600px){
     .container{

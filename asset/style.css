@@ -2,29 +2,61 @@ body{
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-image: url(gambar/desktop-wallpaper-food-background-food-food-recipes-food-menu-greek-food.jpg);
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
 }
 .container{
     width: 80%;
     /* height: 680px;
     background-color: aqua; */
     margin: auto;
-    background-image: url(gambar/WhatsApp_Image_2023-12-21_at_12.29.34-removebg-preview.png);
+    background-image: url(gambar/plan-ishrane-removebg-preview.png);
     display: flex;
     background-repeat: no-repeat;
-    background-size: 400px;
+    background-size: 300px;
     background-position: center center;
 }
 .deskripsi-awal{
     width: 300px;
     height: 300px;
     padding: 10px;
-    background: rgb(214,214,214);
-    background: linear-gradient(347deg, rgba(214,214,214,1) 0%, rgba(168,168,168,1) 0%, rgba(48,48,48,1) 100%);
+    background: rgb(168,92,173);
+    background: linear-gradient(347deg, rgba(168,92,173,1) 0%, rgba(118,180,164,1) 50%, rgba(56,67,103,1) 100%);
     border-radius: 10px;
     margin-top: 300px;
     margin-left: 100px;
     opacity: 95%;
-    box-shadow: 5px 5px 7px rgb(226, 185, 50);
+    animation: shadowAnimation 4s ease-in-out infinite alternate, colorAnimation 8s linear infinite;
+}
+@keyframes shadowAnimation {
+    0% {
+        box-shadow: 0 0 10px rgba(52, 152, 219, 0.7);
+        transform: translateX(0);
+    }
+    100% {
+        box-shadow: 0 0 40px rgba(52, 152, 219, 0.7);
+        transform: translatey(0);
+    }
+}
+
+@keyframes colorAnimation {
+    0% {
+      box-shadow: 5px 5px 10px rgba(0, 153, 255, 0.7);
+    }
+    25% {
+      box-shadow: 5px 5px 10px rgba(52, 219, 108, 0.7);
+    }
+    50% {
+      box-shadow: 5px 5px 10px rgba(255, 0, 0, 0.7);
+    }
+    75% {
+      box-shadow: 5px 5px 10px rgba(76, 56, 255, 0.7);
+    }
+    100% {
+      box-shadow: 5px 5px 10px rgba(252, 34, 223, 0.7); /* Kembali ke warna awal */
+    }
 }
 .judul{
     width: 97%;
@@ -57,25 +89,47 @@ body{
     /* background-color: chartreuse; */
     text-align: justify;
 }
+.button-lanjut{
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    position: absolute;
+    cursor: pointer;
+    animation: moveLeftRight 3s linear infinite alternate;
+    margin-left: 100px;
+}
+@keyframes moveLeftRight {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(20px);
+    }
+}
 .button-lanjut {
     width: 100px;
     height: 15px;
     padding: 5px;
     border-radius: 10px;
     margin-top: 595px;
-    margin-left: 70px;
+    margin-left: 450px;
     text-align: center;
-    background: rgb(214,214,214);
-    background: linear-gradient(347deg, rgba(214,214,214,1) 0%, rgba(168,168,168,1) 0%, rgba(48,48,48,1) 100%);
+    background: rgb(95,217,255);
+    background: linear-gradient(347deg, rgba(95,217,255,1) 0%, rgba(157,118,249,1) 50%, rgba(56,67,103,1) 100%);
     font-weight: bold;
     text-decoration: none;
 }
+.button-lanjut:hover{
+    box-shadow: 5px 5px 7px rgb(50, 226, 226);
+}
 .button-lanjut a:hover{
-    color: rgb(241, 213, 53);
+    color: rgb(0, 0, 0);
+    
+
 }
 .button-lanjut a{
     text-decoration: none;
-    color: black;
+    color: rgb(223, 223, 223);
 }
 .lanjut .button-lanjut{
     text-decoration: none;
@@ -83,6 +137,7 @@ body{
 }
 /* mobile */
 @media only screen and (max-width:600px){
+    
     .container{
         width: 100%;
     }
@@ -97,7 +152,7 @@ body{
     }
     .button-lanjut {
         width: 70px;
-        margin-left: 15px;
+        margin-left: 270px;
         margin-top: 590px;
     }
 }

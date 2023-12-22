@@ -117,6 +117,9 @@ body{
         width: 90%;
         margin: auto;
     }
+    .calculator{
+        width: 90%;
+    }
     .opsi{
         display: flex;
         justify-content: center;

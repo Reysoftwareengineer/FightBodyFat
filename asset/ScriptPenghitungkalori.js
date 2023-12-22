@@ -13,12 +13,12 @@ function hitungKalori() {
   
     if (gender === 'male') {
       // Rumus Mifflin-St Jeor untuk laki-laki
-      kalori = 10 * beratBadan + 6.25 * tinggiBadan - 5 * usia + 5;
+      kalori = 66.5 + (13.75*beratBadan)+(5.003*tinggiBadan)-(6.75*usia);
     } else {
       // Rumus Mifflin-St Jeor untuk perempuan
-      kalori = 10 * beratBadan + 6.25 * tinggiBadan - 5 * usia - 161;
+      kalori = 655.1 + (9.563*beratBadan)+(1.850*tinggiBadan)-(4.676*usia);
     }
-  
+    
     // Menampilkan hasil kalori
     document.getElementById('hasilKalori').textContent = kalori.toFixed(2);
   }

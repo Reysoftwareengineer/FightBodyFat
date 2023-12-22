@@ -95,6 +95,28 @@ body {
         background-repeat: no-repeat;
     }
     .calculator{
+      width: 90%;
       margin: auto;
+      display: flex;
+      flex-direction: column;
+    }
+    #usia{
+      margin-left: 0;
+      width: 100%;
+      margin: 10px 0;
+    }
+    #gender{
+      margin-left: 0;
+      width: 100%;
+      margin: 10px 0;
+    }
+    #beratBadan{
+      margin-left: 0;
+      width: 100%;
+      margin: 10px 0;
+    }
+    #tinggiBadan{
+      width: 100%;
+      margin: 10px 0;
     }
   }
