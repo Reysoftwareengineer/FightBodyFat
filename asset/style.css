@@ -137,7 +137,10 @@ body{
 }
 /* mobile */
 @media only screen and (max-width:600px){
-    
+    body{
+        background-repeat: repeat-y;
+        background-size: cover;
+    }
     .container{
         width: 100%;
     }
