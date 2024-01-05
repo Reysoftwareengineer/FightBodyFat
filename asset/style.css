@@ -25,7 +25,7 @@ body{
     background: rgb(168,92,173);
     background: linear-gradient(347deg, rgba(168,92,173,1) 0%, rgba(118,180,164,1) 50%, rgba(56,67,103,1) 100%);
     border-radius: 10px;
-    margin-top: 300px;
+    margin-top: 250px;
     margin-left: 100px;
     opacity: 95%;
     animation: shadowAnimation 4s ease-in-out infinite alternate, colorAnimation 8s linear infinite;
@@ -111,7 +111,7 @@ body{
     height: 15px;
     padding: 5px;
     border-radius: 10px;
-    margin-top: 595px;
+    margin-top: 540px;
     margin-left: 450px;
     text-align: center;
     background: rgb(95,217,255);
